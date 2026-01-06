@@ -4,8 +4,10 @@ import com.mycompany.authlib.users.AuthenticatableUser;
 
 public interface IAuthView {
     
-    public void handleRegistration();
+    public AuthenticatableUser handleRegistration();
     
     public AuthenticatableUser handleLogin();
+    
+    public void changePassword(AuthenticatableUser user);
     
 }
